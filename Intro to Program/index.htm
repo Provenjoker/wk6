@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<!--
+        tagsV1.html - this is a file to test the use of tags in html as well as some beginning javascrip funtions.
+        
+         
+        
+   -->
+
+<head>
+    <script src="code W31.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>
+        Hunter Devries UAT Space Page
+    </title>
+</head>
+
+<body>
+    <img src="UATspaceLogo-1.jpg">
+    <h1>
+        UAT Space Program
+    </h1>
+
+    <script>
+        //The document.write prints the text on the main body of the webpage.
+        document.write("This is a test of the document.write funtion.");
+
+        /*The alert funtion opens an alert window.
+       The tect within the alert window originates from inside the parenthesis*/
+
+        //var alertText = "This is a test of the alert function(). It is stored within the alertText variable."
+    
+    </script>
+
+    <p>
+        This is a test of the paragraph tags. A paragraph is more than one sentence. This is a paragraph.
+    </p>
+    <br>
+    <br>
+    <div id="blastOffText">Blastoff Status will be presented here</div><!--Display of countdown timer-->
+    <br>
+    
+    <button onclick="betterCTDown();"><!--This is the button for the timer-->
+        Start
+    </button>
+
+    <button>
+        Stop
+    </button>
+    <br>
+    <br>
+    <h2 id="blink">Let's play Craps!!!</h2><!--Craps Header and other Craps text-->
+    <script type="text/javascript">
+        var blink = document.getElementById("blink");
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 600);
+    </script>
+    <!--These are the ids for craps-->
+    <div id="crapsRes">Craps Results</div>
+    <div id="die1Res">Result for die1</div>
+    <div id="die2Res">Result for die2</div>
+    <div id="sumRes">Sum of the two dice</div>
+    <br>
+    <button onclick="playCraps();" class="button">Play Craps</button><!--This is the button to play Craps-->
+    <br>
+    Number of wins: <div id="wins">0</div><!--Displays Wins-->
+    Number of losses: <div id="losses">0</div><!--Displays Losses-->
+    Number of ties: <div id="ties">0</div><!--Displays Ties-->
+
+</body>
+
+</html>
